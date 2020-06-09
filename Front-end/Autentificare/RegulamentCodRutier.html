@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang='ro'>
+
+<head>
+  <meta charset="UTF-8">
+  <title>TraST</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../General(Meniu+Navbar)/Logo-TraST.png" />
+  <link rel="stylesheet" type="text/css" href="../General(Meniu+Navbar)/Style.css">
+  <link rel="stylesheet" type="text/css" href="../General(Meniu+Navbar)/Meniu_Style.css">
+  <link rel="stylesheet" type="text/css" href="../General(Meniu+Navbar)/Navbar_Style.css">
+  <link rel="stylesheet" type="text/css" href="../Legislatie/Regulament_Style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div id="NavBar">
+    <nav class="navbar" id="navi">
+      <span class="open-slide">
+        <a href="#" onclick="openSlideMenu()">
+          <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#edebd9" stroke-width="3" />
+            <path d="M0,14 30,14" stroke="#edebd9" stroke-width="3" />
+            <path d="M0,23 30,23" stroke="#edebd9" stroke-width="3" />
+          </svg>
+        </a>
+      </span>
+      <img src="../General(Meniu+Navbar)/Logo-TraST.png" alt="Logo-TraST">
+      <div class="right">
+        <a href="../PaginaPrincipala/Acasa.php">Acasa</a>
+        <div class="profilulTau">
+          <a href="../Profil/Profil.php">Profilul meu</a>
+          <img src="../PaginaPrincipala/Profil_Icon.png" alt="Profil_Icon">
+        </div>
+        <div class="language">
+          <a href="../PaginaPrincipala/Acasa.php">Lb. romana</a>
+          <a href="../PaginaPrincipala/AcasaISL.php">Lb. islandeza</a>
+    </div>
+      </div>
+    </nav>
+  </div>
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="../Legislatie/RegulamentCodRutier.html">Regulament si codul rutier</a>
+    <a href="../Indicatoare/MediuDeInvatare.html">Mediu de invatare</a>
+    <button class="dropdown-btn">Capitole
+      <i class="fa fa-caret-down">&#9660;</i>
+    </button>
+    <div class="dropdown-container">
+      <a href="../Indicatoare/IndicatoareDeAvertizare.html">Indicatoare de avertizare</a>
+      <a href="../Indicatoare/IndicatoareDePrioritate.html">Indicatoare de prioritate</a>
+      <a href="../Indicatoare/IndicatoareDeRestrictie.html">Indicatoare de interzicere/restrictie</a>
+      <a href="../Indicatoare/IndicatoareDeObligare.html">Indicatoare de obligare</a>
+      <a href="../Indicatoare/IndicatoareOrientative.html">Indicatoare de orientare</a>
+      <a href="../Indicatoare/IndicatoareDeInformare.html">Indicatoare de informare</a>
+      <a href="../Indicatoare/PanouriAditionale.html">Panouri aditionale</a>
+    </div>
+    <a href="../TesteDeAntrenament/TesteDeAntrenament.html">Teste de antrenament</a>
+    <a href="../ClasamentUtilizatori/ClasamentUtilizatori.html">Clasament Utilizatori</a>
+    <a href="../Scholarly/ScholarlyHTML.html">Ghid de utilizare</a> 
+  </div>
+
+
+  <div class="display">
+    <div class="wrapperCuprins">
+      <div class="card">
+        <h2>Cuprins</h2>
+        <div class="cuprins">
+          <a href="#drumPublic">Drumul public</a>
+          <a href="#ocupareParteCarosabila">Ocuparea partii carosabile, circulatia pe benzi</a>
+          <a href="#semnalizareRutiera">Semnalizarea rutiera</a>
+          <a href="#reguliReferitoare">Reguli referitoare la manevre</a>
+          <a href="#vitezeMaximale">Viteze maxime legale</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapperInfo">
+      <div class="capitol" id="drumPublic">
+        <h3>Drumul public</h3>
+        <p class="highlight">Definitie: Orice cale de comunicatie terestrã, cu exceptia cãilor ferate, special
+          amenajatã pentru traficul pietonal sau rutier, deschisã circulaþiei publice;
+          Drumurile care sunt închise circulaþiei publice sunt semnalizate la intrare cu
+          inscripþii vizibile. <b>(art. 6 alin. 14 din OUG)</b>
+          La intrarea pe un drum care nu este deschis circulaþiei publice,
+          proprietarul sau administratorul acestuia este obligat sã instaleze, în
+          loc vizibil, indicator cu semnificaþia „Accesul interzis” si panou cu inscriptia
+          „Drum închis circulatiei publice” <b>(art.3 alin. 5 din R)</b></p>
+        <div class="subcapitol">
+          <h4>Pãrtile componente ale drumului public:</h4>
+          <ul>
+            <li><b>Partea carosabilã</b> - porþiunea din platforma drumului destinatã circulaþiei vehiculelor. Un drum
+              poate cuprinde mai multe
+              pãrþi carosabile complet separate una de cealaltã printr-o zonã despãrþitoare sau prin diferenþa de nivel;
+              <b>(Art.6 alin. 23 din
+                OUG)</b></li>
+            <li><b>Acostamentul</b> - fâsia lateralã cuprinsã între limita pãrþii carosabile ºi marginea platformei
+              drumului <b>(Art. 6 pct. 2 din OUG)</b>.
+              În cazul în care pe drumurile publice nu sunt amenajate benzi sau piste speciale pentru mopede, biciclete
+              si celelalte vehicule fãrã
+              motor, acestea pot fi conduse ºi pe acostament în sensul de mers, dacã circulatia se poate face fãrã
+              pericol. <b>(Art. 100 din R)</b>
+            <li><b>Santurile sau rigolele</b> - amenajarea lateralã dispusã la marginea platformei drumului;</li>
+            <li><b>Trotuarul</b> - spatiul din partea lateralã a drumului, separat în mod vizibil de partea carosabilã
+              prin diferenþã sau fãrã diferenþã
+              de nivel, destinat circulatiei pietonilor;</li>
+          </ul>
+          <h4>Clasificarea drumurilor publice (din punct de vedere al administrãrii si folosintei):</h4>
+          <ul>
+            <li><b>De interes national</b> - autostrazile, drumurile expres, drumurile nationale;</li>
+            <li><b>De interes local</b> - drumurile judetene, drumurile comunale, drumurile din interiorul
+              localitatilor.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="capitol" id="ocupareParteCarosabila">
+        <h3>Ocuparea pãrtii carosabile, circulatia pe benzi</h3>
+        <p class="highlight">VEHICULELE SI ANIMALELE, atunci când circulã pe drumurile publice pe care le este permis
+          accesul, trebuie conduse pe partea din dreapta a drumului public. In sensul de circulatie, cat
+          mai aproape de marginea partii carosabile, cu respectarea semnificatiei semnalizarii rutiere si
+          a regulilor de circulatie. <b>(Art. 41 alin. 1 din OUG)</b></p>
+        <div class="subcapitol">
+          <p>Când drumul are douã sau mai multe benzi pe sensul de mers, vehiculele se conduc pe
+            banda situatã lângã acostament sau bordurã. Celelalte benzi pot fi folosite succesiv, de la
+            dreapta spre stânga, dacã banda de circulaþie utilizatã este ocupatã, cu obligaþia de a reveni
+            pe banda din dreapta atunci când acest lucru este posibil. <b>(Art. 101 din R )</b></p>
+          <p>Dacã un drum este prevãzut cu o pistã specialã destinatã circulaþiei bicicletelor, acestea,
+            precum ºi mopedele vor fi conduse numai pe pista respectivã. <b>(Art. 41 alin. 3 din OUG)</b></p>
+          <p>Dacã un drum este prevãzut cu o bandã destinatã vehiculelor lente sau transportului public
+            de persoane, semnalizatã ca atare, acestea vor circula numai pe banda respectivã. <b>(Art. 43
+              alin. 1 din OUG)</b></p>
+          <p>Vehiculele care efectueazã transport public de persoane se conduc pe banda rezervatã acestora, dacã
+            o astfel de bandã existã ºi este semnalizatã ca atare. Pe aceeaºi bandã pot circula ºi autovehiculele cu
+            regim de circulaþie prioritarã când se deplaseazã în acþiuni de intervenþii sau în misiuni care au caracter
+            de urgenþã. <b>(Art. 104 din R)</b></p>
+        </div>
+      </div>
+
+      <div class="capitol" id="semnalizareRutiera">
+        <h3>Semnalizarea rutierã</h3>
+        <p class="highlight">Circulaþia pe drumurile publice se desfãºoarã în conformitate cu regulile de circulaþie ºi
+          cu respectarea semnificaþiei semnalizãrii
+          rutiere realizate prin mijloacele de semnalizare, semnalele ºi indicaþiile poliþistului rutier care dirijeazã
+          circulaþia,
+          semnalele speciale de avertizare luminoase sau sonore, de semnalizare temporarã ºi semnalele conducãtorilor de
+          vehicule. <b>(Art. 29 alin. 1 din OUG)</b></p>
+        <div class="subcapitol">
+          <p>Participanþii la trafic sunt obligaþi sã respecte ºi semnalele poliþiºtilor de frontierã, ale
+            îndrumãtorilor de circulaþie ai
+            Ministerului Apãrãrii, agenþilor cãilor ferate, ale persoanelor desemnate pentru dirijarea circulaþiei pe
+            sectoarele de drum pe
+            care se executã lucrãri de reabilitare a acestora, ale membrilor patrulelor ºcolare de circulaþie care
+            acþioneazã în imediata
+            apropiere a unitãþilor de învãþãmânt, precum ºi ale nevãzãtorilor, potrivit prevederilor din regulament.
+            <b>(Art. 29 alin. 2 din OUG)</b></p>
+          <h4>Mijloacele de semnalizare rutiera sunt:</h4>
+          <ul>
+            <li>Sisteme de semnalizare luminoasa sau sonora;</li>
+            <li>Indicatoarele;</li>
+            <li>Marcajele;</li>
+            <li>Alte dispozitive speciale</li>
+          </ul>
+          <p>Mijloacele de semnalizare rutierã se constituie într-un sistem unitar ºi coerent, se realizeazã ºi se
+            instaleazã astfel încât sã
+            fie observate cu usurinþã ºi din timp de cãtre cei cãrora li se adreseazã ºi trebuie sã fie în deplinã
+            concordanþã între ele ºi întro
+            stare tehnicã de funcþionare corespunzãtoare.<b>(Art. 30 alin. 2 din OUG)</b></p>
+          <h4>Se interzice:</h4>
+          <p>Amplasarea, în zona drumului public, de construcþii, panouri sau dispozitive ce pot fi confundate cu
+            indicatoarele ori instalaþiile
+            ce servesc la semnalizarea rutierã ori realizarea de amenajãri, care sunt de naturã sã stânjeneascã
+            participanþii la trafic
+            sau sã le distragã atenþia, punând în pericol siguranþa circulaþiei; lipirea de afiºe, inscripþii sau
+            înscrisuri pe indicatoarele
+            ori dispozitivele ce servesc la semnalizarea rutierã, inclusiv pe suporturile acestora.<b>( Art. 30 alin. 7
+              din OUG )</b></p>
+          <p>Participanþii la trafic trebuie sã respecte regulile de circulaþie, semnalele, indicaþiile ºi dispoziþiile
+            poliþistului rutier, precum ºi semnificaþia diferitelor tipuri de mijloace de semnalizare
+            rutierã, în urmãtoarea ordine de prioritate:</p>
+          <ol>
+            <li>Semnalele, indicaþiile ºi dispoziþiile poliþistului rutier;</li>
+            <li>Semnalele speciale de avertizare, luminoase sau sonore;</li>
+            <li>Semnalizarea temporarã care modificã regimul normal de desfãºurare a circulaþiei;</li>
+            <li>Semnalele luminoase sau sonore;</li>
+            <li>Indicatoarele;</li>
+            <li>Marcajele;</li>
+            <li>Regulile de circulaþie.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="capitol" id="reguliReferitoare">
+        <h3>Reguli referitoare la manevre</h3>
+        <div class="subcapitol">
+          <p>Conducãtorul de vehicul care executã o manevrã de schimbare a direcþiei de mers, de ieºire dintr-un
+            rând de vehicule staþionate sau de intrare într-un asemenea rând, de trecere pe o altã bandã de circulaþie
+            sau de virare spre dreapta ori spre stânga sau care urmeazã sã efectueze o întoarcere ori sã
+            meargã cu spatele este obligat sã se asigure cã o poate face fãrã sã perturbe circulaþia sau sã punã în
+            pericol siguranþa celorlalþi participanþi la trafic ºi sã semnalizeze cu cel puþin 50m în localitãþi ºi 100m
+            în afara localitãþilor înainte de a începe efectiv manevra.<b>( Art. 54 alin. 1 din OUG )</b></p>
+          <p>Conducãtorii de vehicule sunt obligaþi sã semnalizeze schimbarea direcþiei de deplasare, depãºirea,
+            oprirea ºi punerea în miºcare. <b>( Art. 116 alin. 1 din R )</b></p>
+          <p>Semnalizarea schimbãrii direcþiei de mers trebuie sã fie menþinutã pe întreaga duratã a manevrei.
+            <b>( Art. 54 alin. 2 din OUG )</b></p>
+          <h4>Oprirea, stationarea, parcarea</h4>
+          <p>Se considerã oprire imobilizarea voluntarã a unui vehicul pe drumul public, pe o duratã de cel mult 5
+            minute.
+            <b>( Art. 63 alin. 1 din OUG )</b></p>
+          <h4>Nu se considera oprire:</h4>
+          <ul>
+            <li>imobilizarea vehiculului atât timp cât este necesarã pentru îmbarcarea sau debarcarea unor persoane,
+              dacã prin aceastã manevrã nu a fost perturbatã circulaþia pe drumul public respectiv;</li>
+            <li>imobilizarea autovehiculului având o masã totalã maximã autorizatã de pânã la 3,5 tone, atât timp cât
+              este
+              necesar pentru operaþiunea de distribuire a mãrfurilor alimentare la unitãþile comerciale. <b>( Art. 63
+                alin. 2 din OUG )</b></li>
+          </ul>
+          <h4>Obligatie</h4>
+          <p>Vehiculul oprit sau staþionat pe partea carosabilã trebuie aºezat lângã ºi în paralel cu
+            marginea acesteia, pe un singur rând, dacã printr-un alt mijloc de semnalizare nu se dispune
+            altfel. Motocicletele fãrã ataº, mopedele ºi bicicletele pot fi oprite sau staþionate ºi câte
+            douã, una lângã alta. În afara localitãþilor oprirea sau staþionarea voluntarã a vehiculelor se
+            face în afara pãrþii carosabile, iar atunci când nu este posibil, cât mai aproape de marginea din
+            dreapta a drumului, paralel cu axa acestuia.<b>( Art. 63 alin. 5 din OUG )</b></p>
+          <p>Conducãtorii autovehiculelor imobilizate
+            pe drumurile publice care se îndepãrteazã
+            de acestea sunt obligaþi sã
+            acþioneze frâna de ajutor, sã opreascã
+            funcþionarea motorului ºi sã cupleze o treaptã
+            de vitezã.<b>( Art. 141 alin. 1 din R )</b></p>
+          <h4>Interzicere</h4>
+          <p>SE INTERZICE CONDUCÃTORULUI DE
+            AUTOVEHICUL ªI PASAGERILOR CA ÎN
+            TIMPUL OPRIRII SAU STAÞIONÃRII SÃ
+            DESCHIDÃ SAU SÃ LASE DESCHISE
+            UªILE ACESTUIA ORI SÃ COBOARE FÃRÃ SÃ SE
+            ASIGURE CÃ NU CREEAZÃ UN PERICOL PENTRU
+            CIRCULAÞIE. <b>( ART. 145 DIN R )</b></p>
+          <p>NU ESTE PERMISÃ OPRIREA SAU
+            STAÞIONAREA ÎN TUNELURI. ÎN SITUAÞII
+            DE URGENÞÃ SAU DE PERICOL CONDUCÃTORULUI
+            DE AUTOVEHICUL ÎI ESTE
+            PERMISÃ OPRIREA SAU STAÞIONAREA NUMAI ÎN
+            LOCURILE SPECIAL AMENAJATE ªI SEMNALIZATE
+            CORESPUNZÃTOR. ÎN CAZ DE IMOBILIZARE PRELUNGITÃ
+            A AUTOVEHICULULUI ÎN TUNEL, CONDUCÃTORUL
+            DE VEHICUL ESTE OBLIGAT SÃ
+            OPREASCÃ MOTORUL. <b>( ART. 141 ALIN. 7 DIN R )</b></p>
+          <h4>Exceptie</h4>
+          <p>ÎN CAZUL IMOBILIZÃRII INVOLUNTARE
+            A AUTOVEHICULULUI ÎN PANTÃ SAU ÎN
+            RAMPÃ, CONDUCÃTORUL ACESTUIA ESTE OBLIGAT
+            SÃ BRACHEZE ROÞILE DIRECTOARE CÃTRE DREAPTA.
+            <b>( ART. 141 ALIN. 2 DIN R )</b></p>
+          <p>ÎN CAZUL IMOBILIZÃRII INVOLUNTARE
+            A AUTOVEHICULULUI ÎN PASAJE SUBTERANE
+            SAU TUNELURI,CONDUCÃTORUL ACESTUIA
+            ESTE OBLIGAT SÃ OPREASCÃ FUNCÞIONAREA
+            MOTORULUI. <b>( ART. 141 ALIN. 3 DIN R )</b></p>
+          <p>ÎN LOCALITÃÞI, PE DRUMURILE CU
+            SENS UNIC, OPRIREA SAU STAÞIONAREA
+            VOLUNTARÃ A VEHICULELOR ESTE PERMISÃ
+            ªI PE PARTEA STÂNGÃ, DACÃ RÃMÂNE LIBERÃ CEL
+            PUÞIN O BANDÃ DE CIRCULAÞIE.
+            <b>( ART. 141 ALIN. 4 DIN R )</b></p>
+          <h4>Stationarea voluntara</h4>
+          <p>Se considerã staþionare imobilizarea
+            voluntarã a unui vehicul pe
+            drumul public, pe o duratã mai mare
+            de 5 minute. <b>( Art. 63 alin. 1 din OUG )</b></p>
+          <p><b>SE INTERZICE STAÞIONAREA VOLUNTARÃ
+              A VEHICULELOR:</b><br>
+            În toate cazurile în care este interzisã
+            oprirea voluntarã (15 cazuri) +5 situaþii
+            unde se interzice numai staþionarea.</p>
+          <p>Orice vehicul care staþioneazã pe
+            timp de noapte pe partea carosabilã
+            a unui drum public, acolo unde
+            staþionarea este permisã, trebuie sã
+            fie semnalizat cu lanterne de poziþie,
+            dacã locul de staþionare nu este iluminat.
+            <b>( Art. 114 alin. 1 lit. a din R )</b></p>
+          <h4>Intoarcerea</h4>
+          <p class="highlight">REGULÃ:Pentru a putea întoarce vehiculul de pe un sens de mers pe celãlalt prin manevrare
+            înainte ºi înapoi sau
+            prin viraj, conducãtorul acestuia este obligat sã semnalizeze ºi sã se asigure cã din faþã, din spate sau
+            din lateral
+            nu circulã în acel moment niciun vehicul.Semnalizarea schimbãrii direcþiei de mers trebuie sã fie menþinutã
+            pe
+            întreaga duratã a manevrei. <b>( Art. 125 din R )</b></p>
+          <p>SE INTERZICE ÎNTOARCEREA
+            VEHICULULUI:<br>
+            În toate cazurile de la oprire voluntarã
+            interzisã (15 cazuri ) cu excepþia
+            intersecþiilor, inclusiv cele cu circulaþie
+            în sens giratoriu, unde manevra
+            de întoarcere este permisã.</p>
+          <h4>Mersul inapoi</h4>
+          <p>REGULÃ: Conducãtorul de vehicul care executã o manevrã de mers cu spatele spre este obligat sã semnalizeze
+            din timp
+            ºi sã se asigure cã o poate face fãrã sã perturbe circulaþia sau sã punã în pericol siguranþa celorlalþi
+            participanþi la trafic.</p>
+          <p>Pe drumurile publice înguste ºi/sau
+            cu declivitate, unde trecerea
+            vehiculelor care circulã din sensuri
+            opuse, unele pe lângã altele, este
+            imposibilã sau periculoasã, se procedeazã
+            dupã cum urmeazã:</p>
+          <ul>
+            <li>la întâlnirea unui ansamblu de
+              vehicule cu un vehicul conducãtorul
+              acestuia din urmã trebuie sã
+              manevreze cu spatele;</li>
+            <li>la întâlnirea unui vehicul greu cu
+              un vehicul uºor, conducãtorul acestuia
+              din urmã trebuie sã manevreze cu
+              spatele;</li>
+            <li>la întâlnirea unui vehicul care
+              efectueazã transport public de persoane
+              cu un vehicul de transport
+              mãrfuri conducãtorul acestuia din
+              urmã trebuie sã manevreze cu spatele.
+              <b>( Art. 127 alin. 1 din R )</b></li>
+          </ul>
+          <p>În cazul vehiculelor de aceeaºi categorie,
+            obligaþia de a efectua o manevrã
+            de mers înapoi revine conducãtorului
+            care urcã, cu excepþia cazului când
+            este mai uºor ºi existã condiþii pentru
+            conducãtorul care coboarã sã execute
+            aceastã manevrã, mai ales atunci
+            când se aflã aproape de un refugiu.
+            <b>( Art. 127 alin. 2 din R )</b></p>
+          <h4>Depasirea</h4>
+          <p>DEFINIÞIE: depãºirea este manevra prin care un vehicul trece înaintea altui vehicul ori pe lângã un
+            obstacol, aflat
+            pe acelaºi sens de circulaþie, prin schimbarea direcþiei de mers ºi ieºirea de pe banda de circulaþie sau
+            din ºirul de
+            vehicule în care s-a aflat iniþial. <b>( Art. 45 alin. 1 din OUG )</b><br>
+            Nu constituie depãºire, situaþia în care un vehicul circulã mai repede pe una dintre benzi decât vehiculele
+            care
+            circulã pe altã bandã în acelaºi sens de circulaþie. <b>( Art. 45 alin. 4 din OUG )</b></p>
+        </div>
+
+        <div class="capitol" id="vitezeMaximale">
+          <h3>Viteze maxime legale</h3>
+          <p class="highlight">Conducãtorii de vehicule sunt obligaþi sã respecte viteza maximã admisã pe sectorul de
+            drum pe care
+            circulã ºi pentru categoria din care face parte vehiculul condus, precum ºi cea impusã prin mijloacele de
+            semnalizare,sã o adapteze în funcþie de condiþiile de drum astfel încât sã poatã efectua orice manevrã
+            în condiþii de siguranþã. <b>( Art. 121 alin 1 din R )</b></p>
+          <div class="subcapitol">
+            <h4>LIMITA MAXIMÃ DE VITEZÃ ÎN LOCALITÃÞI ESTE DE 50 KM/H.</h4>
+            <p>Pe anumite sectoare de drum din interiorul
+              localitãþilor, administratorul drumului
+              poate stabili, pentru autovehiculele din
+              categoriile A ºi B, ºi limite de vitezã superioare,
+              dar nu mai mult de 80 km/h.
+              Limitele de vitezã mai mari de 50 km/h se
+              stabilesc numai cu avizul poliþiei rutiere. Pe
+              anumite sectoare de drum, þinând seama de
+              împrejurãri ºi de intensitatea circulaþiei,
+              administratorul drumului, cu avizul poliþiei
+              rutiere, poate stabili ºi limite de vitezã inferioare,
+              dar nu mai puþin de 10 km/h pentru
+              tramvaie ºi de 30 km/h pentru toate autovehiculele.
+              <b>( Art. 49 alin 1,2 ºi 3 din R )</b></p>
+            <h4>LIMITELE MAXIME DE VITEZÃ ÎN AFARA LOCALITÃÞILOR SUNT:</h4>
+            <ul>
+              <li><b>PE AUTOSTRÃZI: 130 KM/H.</b></li>
+              <li><b>PE DRUMURILE EXPRES SAU PE CELE NAÞIONALE EUROPENE (E): 100 KM/H.</b></li>
+              <li><b>PE CELELALTE CATEGORII DE DRUMURI: 90 KM/H.</b></li>
+            </ul>
+            <h4>Reducerea Vitezei</h4>
+            <p>Conducãtorul de vehicul este obligat sã circule cu o vitezã care sã nu depãºeascã 30 km/h, în localitãþi,
+              sau
+              50 km/h în afara localitãþilor, în urmãtoarele situaþii:</p>
+            <ul>
+              <li>la trecerea prin intersecþiile cu circulaþie nedirijatã;</li>
+              <li>la trecerile pentru pietoni nesemaforizate, semnalizate prin indicatoare
+                ºi marcaje, când drumul public are cel mult o bandã pe sens, iar
+                pietonii aflaþi pe trotuar, în imediata apropiere a pãrþii carosabile,
+                intenþioneazã sã se angajeze în traversare;</li>
+              <li>când vizibilitatea este sub 100m în condiþii de ceaþã, ploi
+                torenþiale, ninsori abundente.</li>
+              <li>la trecerea pe lângã grupuri
+                organizate, coloane militare sau
+                cortegii, indiferent dacã acestea se
+                aflã în mers sau staþioneazã pe
+                partea carosabilã a drumurilor cu o
+                singurã bandã de circulaþie pe sens;</li>
+              <li>pe drumuri cu denivelãri, semnalizate
+                ca atare;</li>
+              <li>când partea carosabilã este
+                acoperitã cu polei, gheaþã, zãpadã
+                bãtãtoritã, mâzgã sau piatrã cubicã
+                umedã;</li>
+              <li>la trecerea pe lângã animale
+                care sunt conduse pe partea carosabilã
+                sau pe acostament;</li>
+              <li>în curbe deosebit de periculoase
+                semnalizate ca atare unde vizibilitatea
+                este mai micã de 50 m;</li>
+              <li>în zona de acþiune a indicatorului
+                de avertizare "Copii" în intervalul
+                orar 07.00 - 22.00 precum ºi a indicatorului
+                "Accident";</li>
+              <li>la schimbarea direcþiei de
+                mers prin viraje.</li>
+            </ul>
+            <p>Administratorul drumului public
+              este obligat ca în locurile prevãzute
+              mai sus sã instaleze indicatoare de
+              avertizare ºi sã ia mãsuri pentru
+              realizarea de amenajãri rutiere care
+              sã determine conducãtorii de
+              vehicule sã reducã viteza de
+              deplasare. <b>( Art. 124 din R )</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="../General(Meniu+Navbar)/Navbar_Functions.js"></script>
+  <script src="../General(Meniu+Navbar)/functions.js"></script>
+</body>
+
+</html>
