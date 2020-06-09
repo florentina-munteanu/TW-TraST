@@ -1,0 +1,85 @@
+html,body {
+  height:100%;    
+  margin:0;
+  padding:0;
+  border:0;
+  font-size: 18px;
+}
+
+.firstPage {
+  /* height: fit-content; */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
+  background-image: url('fundalTrafic.png');
+  background-repeat: no-repeat;
+  background-position-y: 200px;
+  background-size: cover;
+  height: 100vh; /*toata pagina- 100vh*/
+  align-items: center;
+}
+
+.textIntroductiv{
+  width: 60%;
+  height: 30%;
+  margin-top: 5%;
+  align-items: center;
+  text-align: center;
+  font-size: 22px;
+}
+
+button{
+  background-color: #F7BD29;
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  border-radius: 4px;
+  width: 200px;
+  font-size: 16px;
+}
+
+button:hover {opacity: 0.6}
+
+.secondPage{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color:#edebd9;
+  box-sizing: border-box;
+  padding: 50px 150px;
+  height: 150px;
+}
+
+.row{
+  align-items: center;
+  width: 2%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.row img{
+ padding-top: 10px;
+}
+
+.thirdPage{
+  color: black;
+  background-color:white;
+  padding:50px 80px;
+  display: flex;
+  width:100%;
+  box-sizing: border-box;
+}
+
+.secondPage img {
+  width: 200%;
+  height: 150%;
+}
+
+.amplasareDreapta img{
+  width: 100%;
+  height: 100%;
+}
