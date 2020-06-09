@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang='ro'>
+    
+<head>
+    <meta charset="UTF-8">
+    <title>TraST</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/General(Meniu+Navbar)/Logo-TraST.png"/>
+    <link rel="stylesheet" type="text/css" href="/General(Meniu+Navbar)/Style.css">
+    <link rel="stylesheet" type="text/css" href="/Indicatoare/ExplicatieIndicator_Style.css">
+    <link rel="stylesheet" type="text/css" href="/General(Meniu+Navbar)/Meniu_Style.css">
+    <link rel="stylesheet" type="text/css" href="/General(Meniu+Navbar)/Navbar_Style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+</head>
+<body>
+  <div id="NavBar">
+    <nav class="navbar" id="navi">
+      <span class="open-slide">
+        <a href="#" onclick="openSlideMenu()">
+          <svg width="30" height="30">
+              <path d="M0,5 30,5" stroke="#edebd9" stroke-width="3"/>
+              <path d="M0,14 30,14" stroke="#edebd9" stroke-width="3"/>
+              <path d="M0,23 30,23" stroke="#edebd9" stroke-width="3"/>
+          </svg>
+        </a>
+      </span>
+      <img src="/General(Meniu+Navbar)/Logo-TraST.png" alt="Logo-TraST">
+      <div class="right">
+      <a href="/PaginaPrincipala/Acasa.html">Acasa</a>
+      <div class="profilulTau">
+      <a href="/Profil/Profil.html">Profilul meu</a>
+      <img src="/PaginaPrincipala/Profil_Icon.png" alt="Profil_Icon">
+      </div>
+      <div class="language">
+        <a href="../PaginaPrincipala/Acasa.php">Lb. romana</a>
+        <a href="../PaginaPrincipala/AcasaISL.php">Lb. islandeza</a>
+      </div>
+    </div>
+    </nav>
+  </div>
+  
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="/Legislatie/RegulamentCodRutier.html">Regulament si codul rutier</a>
+    <a href="/Indicatoare/MediuDeInvatare.html">Mediu de invatare</a>
+    <button class="dropdown-btn">Capitole 
+      <i class="fa fa-caret-down">&#9660;</i>
+    </button>
+    <div class="dropdown-container">
+      <a href="/Indicatoare/IndicatoareDeAvertizare.html">Indicatoare de avertizare</a>
+      <a href="/Indicatoare/IndicatoareDePrioritate.html">Indicatoare de prioritate</a>
+      <a href="/Indicatoare/IndicatoareDeRestrictie.html">Indicatoare de interzicere/restrictie</a>
+      <a href="/Indicatoare/IndicatoareDeObligare.html">Indicatoare de obligare</a>
+      <a href="/Indicatoare/IndicatoareOrientative.html">Indicatoare de orientare</a>
+      <a href="/Indicatoare/IndicatoareDeInformare.html">Indicatoare de informare</a>
+      <a href="/Indicatoare/PanouriAditionale.html">Panouri aditionale</a> 
+    </div>
+    <a href="/TesteDeAntrenament/TesteDeAntrenament.html">Teste de antrenament</a>
+    <a href="/ClasamentUtilizatori/ClasamentUtilizatori.html">Clasament Utilizatori</a>
+    <a href="../Scholarly/ScholarlyHTML.html">Ghid de utilizare</a> 
+  </div>
+
+<div class="wrapper">
+  <div class="display">
+    <h1>Indicatoare de Prioritate</h1>
+    <div class="miniCard">
+      <div class="titluIndicator">
+        <p>Cedeaza trecerea</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="detalii">
+        <div class="wrapText">
+          <p>Indicatorul se instalează la intrarea intr-o intersectie dirijata prin indicatoare de reglementare a prioritatii. Se mai instaleaza si la intersectiile dirijate prin semafoare rutiere, deasupra acestora , pentru cazurile cand semafoarele electrice nu functioneaza ori functioneaza pe lampa galbena intermitenta , pentru ca prioritatea sa ramana reglementata. La intalnirea lui , conducatorii vehiculelor sunt obligati sa reduca viteza la nivelul impus de situatie, pentru a se asigura asupra drumului transversal si functie de directia lor de deplasare.</p>
+        </div>
+        <div class="wrapImg">
+          <img class="imagine" src="/SemneRutiereRO/IndicatoareDePrioritate/CedeazăTrecerea.png" alt="CedeazaTrecerea">
+        </div>
+      </div>
+      <div class="butoane">
+        <button>Indicator anterior</button>
+        <button>Indicator urmator</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/General(Meniu+Navbar)/Navbar_Functions.js"></script>
+<script src="/General(Meniu+Navbar)/functions.js"></script>
+</body>
+
+</html>
