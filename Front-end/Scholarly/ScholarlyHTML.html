@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang='ro'>
+
+<head>
+  <title>Documentatie TraST</title>
+  <link rel="stylesheet" type="text/css" href="../ScholarlyHTML.css">
+  <link rel="shortcut icon" type="image/x-icon" href="../General(Meniu+Navbar)/Logo-TraST.png" />
+  <link rel="stylesheet" type="text/css" href="../General(Meniu+Navbar)/Style.css">
+  <link rel="stylesheet" type="text/css" href="../General(Meniu+Navbar)/Navbar_Style.css">
+  <link rel="stylesheet" type="text/css" href="../General(Meniu+Navbar)/Meniu_Style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="description" content="Documentatie TraST">
+  <meta name="author1" content="Munteanu Florentina Mihaela">
+  <meta name="author2" content="Theodor David">
+  <meta name="author3" content="Pop Razbuc Cristian">
+</head>
+
+<body>
+  <div id="NavBar">
+    <nav class="navbar" id="navi">
+      <span class="open-slide">
+        <a href="#" onclick="openSlideMenu()">
+          <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#edebd9" stroke-width="3" />
+            <path d="M0,14 30,14" stroke="#edebd9" stroke-width="3" />
+            <path d="M0,23 30,23" stroke="#edebd9" stroke-width="3" />
+          </svg>
+        </a>
+      </span>
+      <img src="../General(Meniu+Navbar)/Logo-TraST.png" alt="Logo-TraST">
+      <div class="right">
+        <a href="../PaginaPrincipala/Acasa.php">Acasa</a>
+        <div class="profilulTau">
+          <a href="../Profil/Profil.php">Profilul meu</a>
+          <img src="../PaginaPrincipala/Profil_Icon.png" alt="Profil_Icon">
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="../Legislatie/RegulamentCodRutier.html">Regulament si codul rutier</a>
+    <a href="../Indicatoare/MediuDeInvatare.html">Mediu de invatare</a>
+    <button class="dropdown-btn">Capitole
+      <i class="fa fa-caret-down">&#9660;</i>
+    </button>
+    <div class="dropdown-container">
+      <a href="../Indicatoare/IndicatoareDeAvertizare.html">Indicatoare de avertizare</a>
+      <a href="../Indicatoare/IndicatoareDePrioritate.html">Indicatoare de prioritate</a>
+      <a href="../Indicatoare/IndicatoareDeRestrictie.html">Indicatoare de interzicere/restrictie</a>
+      <a href="../Indicatoare/IndicatoareDeObligare.html">Indicatoare de obligare</a>
+      <a href="../Indicatoare/IndicatoareOrientative.html">Indicatoare de orientare</a>
+      <a href="../Indicatoare/IndicatoareDeInformare.html">Indicatoare de informare</a>
+      <a href="../Indicatoare/PanouriAditionale.html">Panouri aditionale</a>
+    </div>
+    <a href="../TesteDeAntrenament/TesteDeAntrenament.html">Teste de antrenament</a>
+    <a href="../ClasamentUtilizatori/ClasamentUtilizatori.html">Clasament Utilizatori</a>
+    <a href="../ScholarlyHTML.html">Ghid de utilizare</a>
+  </div>
+
+  <div class="wrapper">
+    <div class="display">
+      <header>
+        <h1>Documentatia aplicatiei Traffic Signs Tutor</h1>
+      </header>
+      <div role="contentinfo">
+        <ol role="directory">
+          <h2>Cuprins</h2>
+          <li><a href="#introducere"><span>1. </span>Introducere</a></li>
+          <li><a href="#structura"><span>2. </span>Structura</a></li>
+          <ol>
+          <li><a href="#tehnologiiUtilizate"><span>2.1. </span>Tehnologii utilizate</a></li>
+          <li><a href="#arhitectura"><span>2.2. </span>Arhitectura aplicatiei</a></li>
+          <li><a href="#interfata"><span>2.3 </span>Interfata aplicatiei</a></li>
+          </ol>
+          <li><a href="#referinte"><span>3. </span>Referinte</a></li>
+        </ol>
+        <dl>
+          <dt><b>Membrii echipei</b></dt>
+          <dd>
+            <p>Munteanu Mihaela Florentina<br>
+              Theodor David<br>
+              Pop Razbuc Cristian</p>
+          </dd>
+        </dl>
+      </div>
+
+      <section id="introducere">
+        <h2><span>1.</span>Introducere</a></h2>
+        <p>Aplicatia <a href="https://github.com/mflorentina-00/TW-TraST">TraST (Traffic Signs Tutor)</a> este o
+          aplicatie Web ce ofera suport pentru invatarea semnelor rutiere si a regulilor
+          de circulatie dintr-o tara sau mai multe. Pentru fiecare (categorie de) semne, se pun la dispozitie informatii
+          precum
+          semnificatia, tipul, regulamentele in vigoare, relatii cu alte semne de interes, sfaturi practice, contextul
+          de utilizare,
+          plus sugestii privind comportamentul soferului/pietonului. Sistemul monitorizeaza progresul inregistrat de
+          fiecare utilizator
+          in procesul de invatare, eventual structurata pe niveluri de dificultate. Se genereaza, de asemenea, un
+          clasament al celor
+          mai sarguinciosi utilizatori, disponibil si ca flux de date RSS. </p>
+      </section>
+
+      <section id="structura">
+        <h2><span>2.</span>Structura</a></h2>
+
+        <section id="tehnologiiUtilizate">
+          <h3><span>2.1</span>Tehnologii Utilizate</a></h3>
+          <p>
+            <b>Baza de Date:</b> MySQL, phpMyAdmin;<br>
+            <b>Back-end:</b> PHP;<br>
+            <b>Front-end:</b>HTML, CSS, JavaScript;
+          </p>
+        </section>
+
+        <section id="arhitectura">
+          <h3><span>2.2</span>Arhitectura aplicatiei</a></h3>
+          <p>
+            Structura aplicatiei
+            <img src="" alt="Imagine Invalida">
+            <br>
+            Client - Server - Baza de date
+            <img src="" alt="Imagine Invalida">
+          </p>
+        </section>
+
+        <section id="interfata">
+          <h3><span>2.3</span>Interfata aplicatiei</a></h3>
+          <p>Aplicatia dispune de o interfata grafica responsive - interfata marcata cu ajutorul HTML5 si foilor de
+            stiluri CSS3 validata urmarind standardele Consortiului WEB.<br>
+            Din punct de vedere al Web Design-ului, aplicatia are o identitate proprie:
+          <ul>
+            <li>Logo</li>
+            <img src="../General(Meniu+Navbar)/Logo-TraST.png" alt="Imagine Invalida">
+            <li>Wireframe-uri</li>
+          </ul>
+        </section>
+      </section>
+
+      <section id="referinte">
+        <h2><span>3.</span>Referinte</a></h2>
+        <ul>
+          <li><a href="http://www.euroavocatura.ro/print2.php?print2=lege&idItem=1344">www.euroavocatura.ro</a></li>
+          <li><a href="https://www.wikiwand.com/en/Comparison_of_European_road_signs">www.wikiwand.com</a></li>
+          <li><a href="https://css-tricks.com/how-to-fetch-and-parse-rss-feeds-in-javascript/">wwww.css-tricks.com</a>
+          </li>
+          <li><a href="https://www.w3schools.com/">www.w3schools.com</a></li>
+          <li><a href="https://www.w3schools.in/php/php-rss-feed/">www.w3schools.in/php</a></li>
+          <li><a href="https://www.freepik.com/">www.freepik.com</a></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <div class="footerPage">
+    <a>@Copyright 2020 TraST</a>
+  </div>
+
+  <script src="../General(Meniu+Navbar)/Navbar_Functions.js"></script>
+  <script src="../General(Meniu+Navbar)/functions.js"></script>
+
+</body>
+
+</html>
