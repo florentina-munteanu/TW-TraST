@@ -1,0 +1,427 @@
+﻿<!DOCTYPE html>
+<html lang='ro'>
+
+<head>
+  <title>TraST</title>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="../General(Meniu+Navbar)/Logo-TraST.png"/>
+  <link rel="stylesheet" type="text/css" href="../General(Meniu+Navbar)/Style.css">
+  <link rel="stylesheet" type="text/css" href="../Indicatoare/Indicatoare_Style.css">
+  <link rel="stylesheet" type="text/css" href="../General(Meniu+Navbar)/Navbar_Style.css">
+  <link rel="stylesheet" type="text/css" href="../General(Meniu+Navbar)/Meniu_Style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div id="NavBar">
+    <nav class="navbar" id="navi">
+      <span class="open-slide">
+        <a href="#" onclick="openSlideMenu()">
+          <svg width="30" height="30">
+              <path d="M0,5 30,5" stroke="#edebd9" stroke-width="3"/>
+              <path d="M0,14 30,14" stroke="#edebd9" stroke-width="3"/>
+              <path d="M0,23 30,23" stroke="#edebd9" stroke-width="3"/>
+          </svg>
+        </a>
+      </span>
+      <img src="../General(Meniu+Navbar)/Logo-TraST.png" alt="Logo-TraST">
+      <div class="right">
+      <a href="../PaginaPrincipala/Acasa.php">Acasa</a>
+      <div class="profilulTau">
+      <a href="../Profil/Profil.php">Profilul meu</a>
+      <img src="../PaginaPrincipala/Profil_Icon.png" alt="Profil_Icon">
+      </div>
+      <div class="language">
+        <a href="../PaginaPrincipala/Acasa.php">Lb. romana</a>
+        <a href="../PaginaPrincipala/AcasaISL.php">Lb. islandeza</a>
+      </div>
+    </div>
+    </nav>
+  </div>
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="../Legislatie/RegulamentCodRutier.html">Regulament si codul rutier</a>
+    <a href="../Indicatoare/MediuDeInvatare.html">Mediu de invatare</a>
+    <button class="dropdown-btn">Capitole 
+      <i class="fa fa-caret-down">&#9660;</i>
+    </button>
+    <div class="dropdown-container">
+      <a href="../Indicatoare/IndicatoareDeAvertizare.html">Indicatoare de avertizare</a>
+      <a href="../Indicatoare/IndicatoareDePrioritate.html">Indicatoare de prioritate</a>
+      <a href="../Indicatoare/IndicatoareDeRestrictie.html">Indicatoare de interzicere/restrictie</a>
+      <a href="../Indicatoare/IndicatoareDeObligare.html">Indicatoare de obligare</a>
+      <a href="../Indicatoare/IndicatoareOrientative.html">Indicatoare de orientare</a>
+      <a href="../Indicatoare/IndicatoareDeInformare.html">Indicatoare de informare</a>
+      <a href="../Indicatoare/PanouriAditionale.html">Panouri aditionale</a> 
+    </div>
+    <a href="../TesteDeAntrenament/TesteDeAntrenament.php">Teste de antrenament</a>
+    <a href="../ClasamentUtilizatori/ClasamentUtilizatori.php">Clasament Utilizatori</a>
+    <a href="../Scholarly/ScholarlyHTML.html">Ghid de utilizare</a> 
+  </div>
+
+  <div class="wrapper">
+    <div class="display">
+      <h1>Mediu de învățare</h1>
+      <div class="progress-wrapper">
+        <div class="progress" id="progress" style="width: 5%;"></div>
+      </div>
+      <button class="next" id="button">Urmatorul</button>
+
+      <div class="descriereCapitol">
+        <h2>Indicatoare de Avertizare</h2>
+        <p class="descriere">Au ca obiect avertizarea participanților la traficul rutier
+          asupra existenței unui pericol pe drum, indicându-
+          le și natura acestuia. Indicatoarele de avertizare,
+          de regulă, au forma unui triunghi echilateral,
+          cu chenarul de culoare roșie în care, pe un fond alb
+          sunt figurate diferite simboluri de culoare neagră
+          reprezentând natura pericolelor ce urmează a fi
+          întâlnite.</p>
+        <p class="descriere"> Se instalează, de regulă înainte de locul periculos,
+          iar zona de acțiune a acestora începe din locul
+          în care sunt instalate și încetează după locul periculos
+          pe care l-au semnalizat. La întâlnirea acestor
+          indicatoare, conducătorii de vehicule trebuie să-și
+          sporească atenția asupra pericolului căruia au fost
+          avertizați.</p>
+        <p class="descriere">(Art. 66 alin. 3,4 și 5 din R)</p>
+      </div>
+      
+      <div class="indicatoare">
+        <div class="container">
+          <p>Accident</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/Accident.png" alt="Accident"
+            class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="Accident" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form> 
+        </div>
+
+        <div class="container">
+          <p>Acostament periculos</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/AcostamentPericulos.png"
+            alt="Acostament periculos" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="AcostamentPericulos" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form>
+        </div>
+
+        <div class="container">
+            <p>Alte pericole</p>
+            <img src="../SemneRutiereRO/IndicatoareDeAvertizare/AltePericole.png" alt="Alte pericole" class="image">
+            <form action="./ExplicatieIndicator.php" method="post">
+                <button>Vezi explicația aici</button>
+                <input type="hidden" name="indicator" value="AltePericole" />
+                <input type="hidden" name="capitol" value="IndicatoareDeAvertizare"/>
+            </form>
+        </div>
+
+        <div class="container">
+          <p>Animale</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/Animale.png"
+          alt="Animale" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="Animale" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form>        </div>
+
+        <div class="container">
+          <p>Bicicliști</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/Bicicliști.png" alt="Bicicliști"
+            class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="Bicicliști" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form> 
+        </div>
+
+        <div class="container">
+          <p>Cădere în chei sau în mal abrupt</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/CădereInChei.png" alt="Cădere în chei sau în mal abrupt" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="CădereInChei" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Căderi de pietre</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/CăderiDePietre.png" alt="Căderi de pietre" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="CăderiDePietre" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Circulație în ambele sensuri</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/CirculațieAmbeleSensuri.png" alt="Circulație în ambele sensuri" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="CirculațieAmbeleSensuri" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Coadă</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/Coadă.png" alt="Coadă" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="Coadă" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form> 
+        </div>
+
+        <div class="container">
+          <p>Copii</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/Copii.png" alt="Copii" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="Copii" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form> 
+        </div>
+
+        <div class="container">
+          <p>Curba deosebit de periculoasa la dreapta</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/CurbaPericuloasa.png" alt="Curba deosebit de periculoasa la dreapta" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="CurbaPericuloasa" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form> 
+        </div>
+
+        <div class="container">
+          <p>Curba la dreapta</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/CurbaDubla.png" alt="Curba la dreapta" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="CurbaDubla" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Denivelare</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/Denivelare.png" alt="Denivelare" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="Denivelare" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Drum alunecos</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/DrumAlunecos.png" alt="Drum alunecos" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="DrumAlunecos" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form> 
+        </div>
+
+        <div class="container">
+          <p>Giratoriu</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/Giratoriu.png" alt="Giratoriu" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="Giratoriu" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Intersecție cu un drum fără prioritate</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/IntersecțieDrum.png" alt="Intersecție cu un drum fără prioritate" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="IntersecțieDrum" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Intersecție</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/Intersecție.png" alt="Intersecție" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="Intersecție" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Împroșcare cu pietriș</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/ÎmproșcarePietriș.png" alt="Împroșcare cu pietriș" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="ÎmproșcarePietriș" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Îngustarea șoselei din ambele sensuri</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/Îngustarea.png" alt="Îngustarea șoselei din ambele sensuri" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="Îngustarea" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Întoarcere din drum spre sens opus</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/Întoarcere.png" alt="Întoarcere din drum spre sens opus" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="Întoarcere" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form> 
+        </div>
+
+        <div class="container">
+          <p>Panouri de distanță pentru trecerea la nivel cu calea ferată</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/PanouriDistantaCF.png" alt="Panouri de distanță pentru trecerea la nivel cu calea ferată" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="PanouriDistantaCF" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Panta abrupta in coborare</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/PantaCoborare.png" alt="Panta abrupta in coborare" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="PantaCoborare" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Panta abrupta in urcare</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/PantaUrcare.png" alt="Panta abrupta in urcare" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="PantaUrcare" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Pod mobil</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/PodMobil.png" alt="Pod mobil" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="PodMobil" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Risc ridicat de accidente</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/RiscAccidente.png" alt="Risc ridicat de accidente" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="RiscAccidente" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Semafor</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/Semafor.png" alt="Semafor" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="Semafor" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Trecere la nivel cu calea ferată, fără bariere</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/TrecereCaleFerata.png" alt="Trecere la nivel cu calea ferată, fără bariere" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="TrecereCaleFerata" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Trecere de pietoni</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/TrecerePietoni.png" alt="Trecere de pietoni" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="TrecerePietoni" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Trecere la nivel cu șinele de tramvai</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/TrecereTramvai.png" alt="Trecere la nivel cu șinele de tramvai" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="TrecereTramvai" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Tunel</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/Tunel.png" alt="Tunel" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="Tunel" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Vânturi laterale</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/Vânturi.png" alt="Vânturi laterale" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="Vânturi" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Zonă aeroportuară</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/ZonăAeroportuară.png" alt="Zonă aeroportuară" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="ZonăAeroportuară" />
+              <input type="hidden" name="capitol" value="IndicatoareDeAvertizare" />
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footerPage">
+    <a>@Copyright 2020 TraST</a>
+  </div>
+
+  <script src="../General(Meniu+Navbar)/Navbar_Functions.js"></script>
+  <script src="../General(Meniu+Navbar)/functions.js"></script>
+
+</body>
+</html>

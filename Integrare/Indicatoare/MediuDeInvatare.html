@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang='ro'>
+
+<head>
+  <title>TraST</title>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="../General(Meniu+Navbar)/Logo-TraST.png"/>
+  <link rel="stylesheet" type="text/css" href="../General(Meniu+Navbar)/Style.css">
+  <link rel="stylesheet" type="text/css" href="../General(Meniu+Navbar)/Meniu_Style.css">
+  <link rel="stylesheet" type="text/css" href="../General(Meniu+Navbar)/Navbar_Style.css">
+  <link rel="stylesheet" type="text/css" href="../Indicatoare/MediuDeInvatare_Style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div id="NavBar">
+    <nav class="navbar" id="navi">
+      <span class="open-slide">
+        <a href="#" onclick="openSlideMenu()">
+          <svg width="30" height="30">
+              <path d="M0,5 30,5" stroke="#edebd9" stroke-width="3"/>
+              <path d="M0,14 30,14" stroke="#edebd9" stroke-width="3"/>
+              <path d="M0,23 30,23" stroke="#edebd9" stroke-width="3"/>
+          </svg>
+        </a>
+      </span>
+      <img src="../General(Meniu+Navbar)/Logo-TraST.png" alt="Logo-TraST">
+      <div class="right">
+      <a href="../PaginaPrincipala/Acasa.php">Acasa</a>
+      <div class="profilulTau">
+      <a href="../Profil/Profil.php">Profilul meu</a>
+      <img src="../PaginaPrincipala/Profil_Icon.png" alt="Profil_Icon">
+      </div>
+      <div class="language">
+        <a href="../PaginaPrincipala/Acasa.php">Lb. romana</a>
+        <a href="../PaginaPrincipala/AcasaISL.php">Lb. islandeza</a>
+  </div>
+    </div>
+    </nav>
+  </div>
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="../Legislatie/RegulamentCodRutier.html">Regulament si codul rutier</a>
+    <a href="../Indicatoare/MediuDeInvatare.html">Mediu de invatare</a>
+    <button class="dropdown-btn">Capitole 
+      <i class="fa fa-caret-down">&#9660;</i>
+    </button>
+    <div class="dropdown-container">
+      <a href="../Indicatoare/IndicatoareDeAvertizare.html">Indicatoare de avertizare</a>
+      <a href="../Indicatoare/IndicatoareDePrioritate.html">Indicatoare de prioritate</a>
+      <a href="../Indicatoare/IndicatoareDeRestrictie.html">Indicatoare de interzicere/restrictie</a>
+      <a href="../Indicatoare/IndicatoareDeObligare.html">Indicatoare de obligare</a>
+      <a href="../Indicatoare/IndicatoareOrientative.html">Indicatoare de orientare</a>
+      <a href="../Indicatoare/IndicatoareDeInformare.html">Indicatoare de informare</a>
+      <a href="../Indicatoare/PanouriAditionale.html">Panouri aditionale</a> 
+    </div>
+    <a href="../TesteDeAntrenament/TesteDeAntrenament.php">Teste de antrenament</a>
+    <a href="../ClasamentUtilizatori/ClasamentUtilizatori.php">Clasament Utilizatori</a>
+    <a href="../Scholarly/ScholarlyHTML.html">Ghid de utilizare</a> 
+  </div>
+
+  <div class="wrapper">
+    <div class="display">
+      <h1>Mediu de învățare</h1>
+      <div class="progress-wrapper">
+        <div class="progress" id="progress" style="width: 5%;"></div>
+      </div>
+      <button class="next" id="button">Urmatorul</button>
+
+      <div class="descriereCapitol">
+        <p class="descriere">Indicatoarele instalate pe drumurile publice sunt:</p>
+          <ul>
+            <li><b>de Avertizare;</b></li>
+            <li><b>de Reglementare</b>, care pot fi: de Prioritate, de Interzicere sau Restricție, de Obligare;</li>
+            <li><b>de Orientare și Informare</b>, care pot fi: de Orientare, de Informare, de Informare Turistică, Panouri Adiționale, Indicatoare kilometrice și hectometrice;</li>
+            <li><b>Mijloace de semnalizare a lucrărilor</b>, care cuprind: Indicatoare rutiere temporare, mijloace auxiliare de semnalizare a lucrărilor.</li>
+          </ul> 
+        <p>( Art. 64 din R )</p>
+        <p>Indicatoarele se instalează, de regulă, pe partea dreaptă a sensului de mers. în cazul în care condițiile locale împiedică
+        observarea din timp a indicatoarelor de către conducătorii cărora li se adresează, ele se pot instala ori repeta pe partea
+        stângă, în zona mediană a drumului, pe un refugiu ori spațiu interzis circulației vehiculelor, deasupra părții
+        carosabile sau de cealaltă parte a intersecției, în loc vizibil pentru toți participanții la trafic.
+        <br>( Art. 65 din R )</p>
+      </div>
+      
+      <div class="indicatoare">
+        <div class="containerCapitol">
+          <p>Indicatoare de Avertizare</p>
+          <img src="../SemneRutiereRO/IndicatoareDeAvertizare/Întoarcere.png" alt="Indicatoare de Avertizare"
+            class="image">
+            <p>Semnele adiționale se pot aplica pe panouri ce includ indicatoare ori chiar pe indicatoare, dacă
+              înțelegerea semnificației acestora nu este afectată.</p>
+          <button onclick="redirectToPage('IndicatoareDeAvertizare.html')">Mergi la capitol</button> 
+        </div>
+
+        <div class="containerCapitol">
+          <p>Indicatoare de Informare</p>
+          <img src="../SemneRutiereRO/IndicatoareDeInformare/SensUnic.png"
+            alt="Indicatoare de Informare" class="image">
+            <p>Semnele adiționale se pot aplica pe panouri ce includ indicatoare ori chiar pe indicatoare, dacă
+              înțelegerea semnificației acestora nu este afectată.</p>
+            <button onclick="redirectToPage('IndicatoareDeInformare.html')">Mergi la capitol</button> 
+        </div>
+
+        <div class="containerCapitol">
+          <p>Indicatoare de Obligare</p>
+          <img src="../SemneRutiereRO/IndicatoareDeObligare/Ocolire.png" alt="Indicatoare de Obligare" class="image">
+          <p>Semnele adiționale se pot aplica pe panouri ce includ indicatoare ori chiar pe indicatoare, dacă
+            înțelegerea semnificației acestora nu este afectată.</p>
+          <button onclick="redirectToPage('IndicatoareDeObligare.html')">Mergi la capitol</button> 
+        </div>
+
+        <div class="containerCapitol">
+          <p>Indicatoare de Prioritate</p>
+          <img src="../SemneRutiereRO/IndicatoareDePrioritate/STOP.png"
+          alt="Indicatoare De Prioritate" class="image">
+          <p>Semnele adiționale se pot aplica pe panouri ce includ indicatoare ori chiar pe indicatoare, dacă
+            înțelegerea semnificației acestora nu este afectată.</p>
+          <button onclick="redirectToPage('IndicatoareDePrioritate.html')">Mergi la capitol</button> 
+        </div>
+
+        <div class="containerCapitol">
+          <p>Indicatoare de Restrictie</p>
+          <img src="../SemneRutiereRO/IndicatoareleDeInterzicereRestricție/DepășireaInterzisă.png"
+            alt="Indicatoare De Restrictie" class="image">
+            <p>Semnele adiționale se pot aplica pe panouri ce includ indicatoare ori chiar pe indicatoare, dacă
+              înțelegerea semnificației acestora nu este afectată.</p>
+            <button onclick="redirectToPage('IndicatoareDeRestrictie.html')">Mergi la capitol</button> 
+        </div>
+
+        <div class="containerCapitol">
+          <p>Indicatoare Orientative</p>
+          <img src="../SemneRutiereRO/IndicatoareOrientative/Autostradă.png" alt="Indicatoare Orientative"
+            class="image">
+            <p> Indicatoarele de orientare oferã 
+              informații referitoare la direcția ce trebuie urmatã pentru a se ajunge la destinația
+              dorită ori la diferitele utilități publice de care pot beneficia participanții la trafic pe
+              traseul pe care urmează să-l parcurgă.</p>
+            <button onclick="redirectToPage('IndicatoareOrientative.html')">Mergi la capitol</button> 
+          </div>
+
+        <div class="containerCapitol">
+          <p>Panouri Aditionale</p>
+          <img src="../SemneRutiereRO/PanouriAdiționale/ExecutareaParcării.png" alt="Panouri Aditionale" class="image">
+          <p>Panourile aditionale sunt montate pentru a semnala diatanta de la sau pana la care indicatorul rutier are actiune, intervalele orare in care trebuie respectata semnificatia indicatorului, inceputul sau sfarsitul zonei de actiune a indicatorului, etc.</p>
+          <button onclick="redirectToPage('PanouriAditionale.html')">Mergi la capitol</button> 
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footerPage">
+    <a>@Copyright 2020 TraST</a>
+  </div>
+  
+  <script src="../General(Meniu+Navbar)/Navbar_Functions.js"></script>
+  <script src="../General(Meniu+Navbar)/functions.js"></script>
+</body>
+</html>

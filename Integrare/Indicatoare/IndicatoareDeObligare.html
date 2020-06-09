@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang='ro'>
+
+<head>
+  <title>TraST</title>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="../General(Meniu+Navbar)/Logo-TraST.png" />
+  <link rel="stylesheet" type="text/css" href="../General(Meniu+Navbar)/Style.css">
+  <link rel="stylesheet" type="text/css" href="../Indicatoare/Indicatoare_Style.css">
+  <link rel="stylesheet" type="text/css" href="../General(Meniu+Navbar)/Meniu_Style.css">
+  <link rel="stylesheet" type="text/css" href="../General(Meniu+Navbar)/Navbar_Style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div id="NavBar">
+    <nav class="navbar" id="navi">
+      <span class="open-slide">
+        <a href="#" onclick="openSlideMenu()">
+          <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#edebd9" stroke-width="3" />
+            <path d="M0,14 30,14" stroke="#edebd9" stroke-width="3" />
+            <path d="M0,23 30,23" stroke="#edebd9" stroke-width="3" />
+          </svg>
+        </a>
+      </span>
+      <img src="../General(Meniu+Navbar)/Logo-TraST.png" alt="Logo-TraST">
+      <div class="right">
+        <a href="../PaginaPrincipala/Acasa.php">Acasa</a>
+        <div class="profilulTau">
+          <a href="../Profil/Profil.php">Profilul meu</a>
+          <img src="../PaginaPrincipala/Profil_Icon.png" alt="Profil_Icon">
+        </div>
+        <div class="language">
+          <a href="../PaginaPrincipala/Acasa.php">Lb. romana</a>
+          <a href="../PaginaPrincipala/AcasaISL.php">Lb. islandeza</a>
+    </div>
+      </div>
+    </nav>
+  </div>
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="../Legislatie/RegulamentCodRutier.html">Regulament si codul rutier</a>
+    <a href="../Indicatoare/MediuDeInvatare.html">Mediu de invatare</a>
+    <button class="dropdown-btn">Capitole
+      <i class="fa fa-caret-down">&#9660;</i>
+    </button>
+    <div class="dropdown-container">
+      <a href="../Indicatoare/IndicatoareDeAvertizare.html">Indicatoare de avertizare</a>
+      <a href="../Indicatoare/IndicatoareDePrioritate.html">Indicatoare de prioritate</a>
+      <a href="../Indicatoare/IndicatoareDeRestrictie.html">Indicatoare de interzicere/restrictie</a>
+      <a href="../Indicatoare/IndicatoareDeObligare.html">Indicatoare de obligare</a>
+      <a href="../Indicatoare/IndicatoareOrientative.html">Indicatoare de orientare</a>
+      <a href="../Indicatoare/IndicatoareDeInformare.html">Indicatoare de informare</a>
+      <a href="../Indicatoare/PanouriAditionale.html">Panouri aditionale</a>
+    </div>
+    <a href="../TesteDeAntrenament/TesteDeAntrenament.php">Teste de antrenament</a>
+    <a href="../ClasamentUtilizatori/ClasamentUtilizatori.php">Clasament Utilizatori</a>
+    <a href="../Scholarly/ScholarlyHTML.html">Ghid de utilizare</a> 
+  </div>
+
+  <div class="wrapper">
+    <div class="display">
+      <h1>Mediu de învățare</h1>
+      <div class="progress-wrapper">
+        <div class="progress" id="progress" style="width: 5%;"></div>
+      </div>
+      <button class="next" id="button">Urmatorul</button>
+
+      <div class="descriereCapitol">
+        <h2>Indicatoare de Obligare</h2>
+        <p class="descriere">Acestea au, de regulă, formă rotundă pe fond albastru cu simboluri de culoare albă,
+          obligând conducătorii de vehicule să se deplaseze numai pe anumite direcții, sau să circule numai pe anumite
+          drumuri.</p>
+      </div>
+
+      <div class="indicatoare">
+        <div class="container">
+          <p>Avertizare pentru direcția obligatorie (dreapta/stânga)</p>
+          <img src="../SemneRutiereRO/IndicatoareDeObligare/Avertizare.png"
+            alt="Avertizare pentru direcția obligatorie (dreapta/stânga)" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="Avertizare" />
+            <input type="hidden" name="capitol" value="IndicatoareDeObligare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Circulație pentru autobuz</p>
+          <img src="../SemneRutiereRO/IndicatoareDeObligare/CirculațieAutobuz.png" alt="Circulație pentru autobuz"
+            class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="CirculațieAutobuz" />
+            <input type="hidden" name="capitol" value="IndicatoareDeObligare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Delimitarea pistei pietonale și pistei de bicicliști</p>
+          <img src="../SemneRutiereRO/IndicatoareDeObligare/Delimitare.png"
+            alt="Delimitarea pistei pietonale și pistei de bicicliști" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="Delimitare" />
+            <input type="hidden" name="capitol" value="IndicatoareDeObligare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>La dreapta/stânga</p>
+          <img src="../SemneRutiereRO/IndicatoareDeObligare/Dreapta.png" alt="La dreapta/stânga" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="Dreapta" />
+            <input type="hidden" name="capitol" value="IndicatoareDeObligare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Giratoriu</p>
+          <img src="../SemneRutiereRO/IndicatoareDeObligare/Giratoriu.png" alt="Giratoriu" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="Giratoriu" />
+            <input type="hidden" name="capitol" value="IndicatoareDeObligare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Înainte</p>
+          <img src="../SemneRutiereRO/IndicatoareDeObligare/Inainte.png" alt="Înainte" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="Inainte" />
+            <input type="hidden" name="capitol" value="IndicatoareDeObligare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Înainte și/sau la dreapta</p>
+          <img src="../SemneRutiereRO/IndicatoareDeObligare/Înainte-dreapta.png" alt="Înainte și-sau la dreapta"
+            class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="Înainte-dreapta" />
+            <input type="hidden" name="capitol" value="IndicatoareDeObligare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Lanțuri de iarnă</p>
+          <img src="../SemneRutiereRO/IndicatoareDeObligare/Lanțuri.png" alt="Lanțuri de iarnă" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="Lanțuri" />
+            <input type="hidden" name="capitol" value="IndicatoareDeObligare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Ocolire pe la dreapta și stânga</p>
+          <img src="../SemneRutiereRO/IndicatoareDeObligare/Ocolire.png" alt="Ocolire pe la dreapta și stânga"
+            class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="Ocolire" />
+            <input type="hidden" name="capitol" value="IndicatoareDeObligare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Pistă pietonală</p>
+          <img src="../SemneRutiereRO/IndicatoareDeObligare/PistaPietonală.png" alt="Pistă pietonală" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="PistaPietonală" />
+            <input type="hidden" name="capitol" value="IndicatoareDeObligare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Pistă de bicicliști</p>
+          <img src="../SemneRutiereRO/IndicatoareDeObligare/PistăBicicliști.png" alt="Pista de biciclisti"
+            class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="PistăBicicliști" />
+            <input type="hidden" name="capitol" value="IndicatoareDeObligare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Sfârșitul vitezei minime</p>
+          <img src="../SemneRutiereRO/IndicatoareDeObligare/SfârșitulVitezei.png" alt="Sfârșitul vitezei minime"
+            class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="SfârșitulVitezei" />
+            <input type="hidden" name="capitol" value="IndicatoareDeObligare" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Viteză minimă</p>
+          <img src="../SemneRutiereRO/IndicatoareDeObligare/VitezăMinimă.png" alt="Viteză minimă" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="VitezăMinimă" />
+            <input type="hidden" name="capitol" value="IndicatoareDeObligare" />
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footerPage">
+    <a>@Copyright 2020 TraST</a>
+  </div>
+
+  <script src="../General(Meniu+Navbar)/Navbar_Functions.js"></script>
+  <script src="../General(Meniu+Navbar)/functions.js"></script>
+</body>
+
+</html>

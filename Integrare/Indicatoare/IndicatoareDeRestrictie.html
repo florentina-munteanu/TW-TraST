@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang='ro'>
+
+<head>
+  <title>TraST</title>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="../General(Meniu+Navbar)/Logo-TraST.png"/>
+  <link rel="stylesheet" type="text/css" href="../General(Meniu+Navbar)/Style.css">
+  <link rel="stylesheet" type="text/css" href="../Indicatoare/Indicatoare_Style.css">
+  <link rel="stylesheet" type="text/css" href="../General(Meniu+Navbar)/Meniu_Style.css">
+  <link rel="stylesheet" type="text/css" href="../General(Meniu+Navbar)/Navbar_Style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div id="NavBar">
+    <nav class="navbar" id="navi">
+      <span class="open-slide">
+        <a href="#" onclick="openSlideMenu()">
+          <svg width="30" height="30">
+              <path d="M0,5 30,5" stroke="#edebd9" stroke-width="3"/>
+              <path d="M0,14 30,14" stroke="#edebd9" stroke-width="3"/>
+              <path d="M0,23 30,23" stroke="#edebd9" stroke-width="3"/>
+          </svg>
+        </a>
+      </span>
+      <img src="../General(Meniu+Navbar)/Logo-TraST.png" alt="Logo-TraST">
+      <div class="right">
+      <a href="../PaginaPrincipala/Acasa.php">Acasa</a>
+      <div class="profilulTau">
+      <a href="../Profil/Profil.php">Profilul meu</a>
+      <img src="../PaginaPrincipala/Profil_Icon.png" alt="Profil_Icon">
+      </div>
+      <div class="language">
+        <a href="../PaginaPrincipala/Acasa.php">Lb. romana</a>
+        <a href="../PaginaPrincipala/AcasaISL.php">Lb. islandeza</a>
+  </div>
+    </div>
+    </nav>
+  </div>
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="../Legislatie/RegulamentCodRutier.html">Regulament si codul rutier</a>
+    <a href="../Indicatoare/MediuDeInvatare.html">Mediu de invatare</a>
+    <button class="dropdown-btn">Capitole 
+      <i class="fa fa-caret-down">&#9660;</i>
+    </button>
+    <div class="dropdown-container">
+      <a href="../Indicatoare/IndicatoareDeAvertizare.html">Indicatoare de avertizare</a>
+      <a href="../Indicatoare/IndicatoareDePrioritate.html">Indicatoare de prioritate</a>
+      <a href="../Indicatoare/IndicatoareDeRestrictie.html">Indicatoare de interzicere/restrictie</a>
+      <a href="../Indicatoare/IndicatoareDeObligare.html">Indicatoare de obligare</a>
+      <a href="../Indicatoare/IndicatoareOrientative.html">Indicatoare de orientare</a>
+      <a href="../Indicatoare/IndicatoareDeInformare.html">Indicatoare de informare</a>
+      <a href="../Indicatoare/PanouriAditionale.html">Panouri aditionale</a> 
+    </div>
+    <a href="../TesteDeAntrenament/TesteDeAntrenament.php">Teste de antrenament</a>
+    <a href="../ClasamentUtilizatori/ClasamentUtilizatori.php">Clasament Utilizatori</a>
+    <a href="../Scholarly/ScholarlyHTML.html">Ghid de utilizare</a> 
+  </div>
+
+  <div class="wrapper">
+    <div class="display">
+      <h1>Mediu de învățare</h1>
+      <div class="progress-wrapper">
+        <div class="progress" id="progress" style="width: 5%;"></div>
+      </div>
+      <button class="next" id="button">Urmatorul</button>
+
+      <div class="descriereCapitol">
+        <h2>Indicatoare de interzicere sau restricție</h2>
+        <p class="descriere">Semnificația indicatoarelor de interzicere sau restricție începe sau este aplicabilă din
+          dreptul acestor indicatoare. În lipsa unei semnalizări care sã precizeze lungimea sectorului
+          pe care se aplică reglementarea ori a unor indicatoare care să anunțe sfârșitul interdicției
+          sau a restricției, semnificația acestor indicatoare înceteazã în intersecția cea mai
+          apropiată. Când indicatoarele de interzicere sau restricție sunt instalate împreunã cu indicatorul
+          ce anunță intrarea într-o localitate, semnificația lor este valabilă pe drumul
+          respectiv, cu excepția locurilor unde alte indicatoare dispun altfel. (Art. 66 alin. 6 din R)</p>
+      </div>
+      
+      <div class="indicatoare">
+        <div class="container">
+          <p>Acces interzis</p>
+          <img src="../SemneRutiereRO/IndicatoareleDeInterzicereRestricție/AccesInterzis.png" alt="Acces interzis"
+            class="image">
+            <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="AccesInterzis" />
+              <input type="hidden" name="capitol" value="IndicatoareleDeInterzicereRestricție" />
+          </form>
+        </div>
+
+        <div class="container">
+          <p>Circulația interzisă vehiculelor cu material exploziv-inflamabil</p>
+          <img src="../SemneRutiereRO/IndicatoareleDeInterzicereRestricție/CirculațiaInterzisăExploziv.png" alt="Circulația interzisă vehiculelor cu material exploziv-inflamabil" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="CirculațiaInterzisăExploziv" />
+            <input type="hidden" name="capitol" value="IndicatoareleDeInterzicereRestricție" />
+        </form>
+        </div>
+
+        <div class="container">
+          <p>Circulația interzisă vehiculelor cu mărfuri periculoase</p>
+          <img src="../SemneRutiereRO/IndicatoareleDeInterzicereRestricție/CirculațiaInterzisăPericuloase.png" alt="Circulația interzisă vehiculelor cu mărfuri periculoase" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="CirculațiaInterzisăPericuloase" />
+            <input type="hidden" name="capitol" value="IndicatoareleDeInterzicereRestricție" />
+        </form>
+        </div>
+
+        <div class="container">
+          <p>Circulația interzisă vehiculelor cu mărfuri care poluează apa</p>
+          <img src="../SemneRutiereRO/IndicatoareleDeInterzicereRestricție/CirculațiaInterzisăPoluează.png" alt="Circulația interzisă vehiculelor cu mărfuri care poluează apa" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="CirculațiaInterzisăPoluează" />
+            <input type="hidden" name="capitol" value="IndicatoareleDeInterzicereRestricție" />
+        </form>
+        </div>
+
+        <div class="container">
+          <p>Circulația interzisă motocicletelor, vehiculelor motorizate și a vehiculelor cu tracțiune animală</p>
+          <img src="../SemneRutiereRO/IndicatoareleDeInterzicereRestricție/CirculațiaInterzisăTuturor.png" alt="Circulația interzisă motocicletelor, vehiculelor motorizate și a vehiculelor cu tracțiune animală" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="CirculațiaInterzisăTuturor" />
+            <input type="hidden" name="capitol" value="IndicatoareleDeInterzicereRestricție" />
+        </form>
+        </div>
+
+        <div class="container">
+          <p>Circulație interzisă</p>
+          <img src="../SemneRutiereRO/IndicatoareleDeInterzicereRestricție/CirculațieInterzisă.png" alt="Circulație interzisă" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="CirculațieInterzisă" />
+            <input type="hidden" name="capitol" value="IndicatoareleDeInterzicereRestricție" />
+        </form>
+        </div>
+
+        <div class="container">
+          <p>Circulație interzisă pentru autobuze</p>
+          <img src="../SemneRutiereRO/IndicatoareleDeInterzicereRestricție/CirculațieInterzisăAutobuze.png" alt="Circulație interzisă pentru autobuze" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="CirculațieInterzisăAutobuze" />
+            <input type="hidden" name="capitol" value="IndicatoareleDeInterzicereRestricție" />
+        </form>
+        </div>
+
+        <div class="container">
+          <p>Circulație interzisă pentru autovehicule</p>
+          <img src="../SemneRutiereRO/IndicatoareleDeInterzicereRestricție/CirculațieInterzisăAutovehicule.png" alt="CirculațieInterzisăAutovehicule" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="CirculațieInterzisăAutovehicule" />
+            <input type="hidden" name="capitol" value="IndicatoareleDeInterzicereRestricție" />
+        </form>
+        </div>
+
+        <div class="container">
+          <p>Circulație interzisă pentru biciclete</p>
+          <img src="../SemneRutiereRO/IndicatoareleDeInterzicereRestricție/CirculațieInterzisăBiciclete.png"
+            alt="Circulație interzisă pentru biciclete" class="image">
+            <form action="./ExplicatieIndicator.php" method="post">
+              <button>Vezi explicația aici</button>
+              <input type="hidden" name="indicator" value="CirculațieInterzisăBiciclete" />
+              <input type="hidden" name="capitol" value="IndicatoareleDeInterzicereRestricție" />
+          </form>
+        </div>
+
+
+        <div class="container">
+          <p>Circulație interzisă pentru motociclete</p>
+          <img src="../SemneRutiereRO/IndicatoareleDeInterzicereRestricție/CirculațieInterzisăMotociclete.png"
+          alt="Circulație interzisă pentru motociclete" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="CirculațieInterzisăMotociclete" />
+            <input type="hidden" name="capitol" value="IndicatoareleDeInterzicereRestricție" />
+        </form>
+        </div>
+
+        <div class="container">
+          <p>Circulație interzisă pietonilor</p>
+          <img src="../SemneRutiereRO/IndicatoareleDeInterzicereRestricție/CirculațieInterzisăPietonilor.png" alt="Circulație interzisă pietonilor" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="CirculațieInterzisăPietonilor" />
+            <input type="hidden" name="capitol" value="IndicatoareleDeInterzicereRestricție" />
+        </form>
+        </div>
+
+        <div class="container">
+          <p>Claxonatul interzis</p>
+          <img src="../SemneRutiereRO/IndicatoareleDeInterzicereRestricție/ClaxonatulInterzis.png" alt="Claxonatul interzis" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="ClaxonatulInterzis" />
+            <input type="hidden" name="capitol" value="IndicatoareleDeInterzicereRestricție" />
+        </form>
+        </div>
+
+        <div class="container">
+          <p>Depășirea interzisă</p>
+          <img src="../SemneRutiereRO/IndicatoareleDeInterzicereRestricție/DepășireaInterzisă.png" alt="Depășirea interzisă" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="DepășireaInterzisă" />
+            <input type="hidden" name="capitol" value="IndicatoareleDeInterzicereRestricție" />
+        </form> 
+        </div>
+
+        <div class="container">
+          <p>Depășirea interzisă pentru vehicule mari</p>
+          <img src="../SemneRutiereRO/IndicatoareleDeInterzicereRestricție/DepășireaInterzisăVehiculeMari.png" alt="Depășirea interzisă pentru vehicule mari" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="DepășireaInterzisăVehiculeMari" />
+            <input type="hidden" name="capitol" value="IndicatoareleDeInterzicereRestricție" />
+        </form>
+        </div>
+
+        <div class="container">
+          <p>Distanța minimă</p>
+          <img src="../SemneRutiereRO/IndicatoareleDeInterzicereRestricție/DistanțaMinimă.png" alt="Distanța minimă" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="DistanțaMinimă" />
+            <input type="hidden" name="capitol" value="IndicatoareleDeInterzicereRestricție" />
+        </form>
+        </div>
+
+        <div class="container">
+          <p>Greutatea maximă</p>
+          <img src="../SemneRutiereRO/IndicatoareleDeInterzicereRestricție/GreutateaMaximă.png" alt="Greutatea maximă" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="GreutateaMaximă" />
+            <input type="hidden" name="capitol" value="IndicatoareleDeInterzicereRestricție" />
+        </form>
+        </div>
+
+        <div class="container">
+          <p>Greutatea maximă pe osie simplă</p>
+          <img src="../SemneRutiereRO/IndicatoareleDeInterzicereRestricție/GreutateaMaximăOsie.png" alt="Greutatea maximă pe osie simplă" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="GreutateaMaximăOsie" />
+            <input type="hidden" name="capitol" value="IndicatoareleDeInterzicereRestricție" />
+        </form>
+        </div>
+
+        <div class="container">
+          <p>Înălțimea maximă</p>
+          <img src="../SemneRutiereRO/IndicatoareleDeInterzicereRestricție/ÎnălțimeaMaximă.png" alt="Înălțimea maximă" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="ÎnălțimeaMaximă" />
+            <input type="hidden" name="capitol" value="IndicatoareleDeInterzicereRestricție" />
+        </form> 
+        </div>
+
+        <div class="container">
+          <p>Întoarcerea interzisă</p>
+          <img src="../SemneRutiereRO/IndicatoareleDeInterzicereRestricție/ÎntoarcereaInterzisă.png" alt="Întoarcerea interzisă" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="ÎntoarcereaInterzisă" />
+            <input type="hidden" name="capitol" value="IndicatoareleDeInterzicereRestricție" />
+        </form>
+        </div>
+
+        <div class="container">
+          <p>Lățime maximă</p>
+          <img src="../SemneRutiereRO/IndicatoareleDeInterzicereRestricție/LățimeMaximă.png" alt="Lățime maximă" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="LățimeMaximă" />
+            <input type="hidden" name="capitol" value="IndicatoareleDeInterzicereRestricție" />
+        </form> 
+        </div>
+
+        <div class="container">
+          <p>Lungime maximă</p>
+          <img src="../SemneRutiereRO/IndicatoareleDeInterzicereRestricție/LungimeMaximă.png" alt="Lungime maximă" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="LungimeMaximă" />
+            <input type="hidden" name="capitol" value="IndicatoareleDeInterzicereRestricție" />
+        </form>
+        </div>
+
+        <div class="container">
+          <p>Oprirea interzisă</p>
+          <img src="../SemneRutiereRO/IndicatoareleDeInterzicereRestricție/OprireaInterzisă.png" alt="Oprirea interzisă" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="OprireaInterzisă" />
+            <input type="hidden" name="capitol" value="IndicatoareleDeInterzicereRestricție" />
+        </form>
+        </div>
+
+        <div class="container">
+          <p>Sfârșitul restricției de depășire</p>
+          <img src="../SemneRutiereRO/IndicatoareleDeInterzicereRestricție/SfârșitulRestricțieiDepășire.png" alt="Sfârșitul restricției de depășire" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="SfârșitulRestricțieiDepășire" />
+            <input type="hidden" name="capitol" value="IndicatoareleDeInterzicereRestricție" />
+        </form>
+        </div>
+    
+        <div class="container">
+          <p>Staționarea interzisă</p>
+          <img src="../SemneRutiereRO/IndicatoareleDeInterzicereRestricție/StaționareaInterzisă.png" alt="Staționarea interzisă" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="StaționareaInterzisă" />
+            <input type="hidden" name="capitol" value="IndicatoareleDeInterzicereRestricție" />
+        </form> 
+        </div>
+
+        <div class="container">
+          <p>Vamă</p>
+          <img src="../SemneRutiereRO/IndicatoareleDeInterzicereRestricție/Vamă.png" alt="Vamă" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="Vamă" />
+            <input type="hidden" name="capitol" value="IndicatoareleDeInterzicereRestricție" />
+        </form> 
+        </div>
+
+        <div class="container">
+          <p>Virajul la dreapta interzis</p>
+          <img src="../SemneRutiereRO/IndicatoareleDeInterzicereRestricție/VirajulInterzis.png" alt="Virajul la dreapta interzis" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="VirajulInterzis" />
+            <input type="hidden" name="capitol" value="IndicatoareleDeInterzicereRestricție" />
+        </form>
+        </div>
+
+        <div class="container">
+          <p>Viteza maximă</p>
+          <img src="../SemneRutiereRO/IndicatoareleDeInterzicereRestricție/VitezaMaximă.png" alt="Viteza maximă" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="VitezaMaximă" />
+            <input type="hidden" name="capitol" value="IndicatoareleDeInterzicereRestricție" />
+        </form>
+        </div>
+
+        <div class="container">
+          <p>Zonă cu viteză limitată</p>
+          <img src="../SemneRutiereRO/IndicatoareleDeInterzicereRestricție/ZonăVitezăLimitată.png" alt="Zonă cu viteză limitată" class="image">
+          <form action="./ExplicatieIndicator.php" method="post">
+            <button>Vezi explicația aici</button>
+            <input type="hidden" name="indicator" value="ZonăVitezăLimitată" />
+            <input type="hidden" name="capitol" value="IndicatoareleDeInterzicereRestricție" />
+        </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footerPage">
+    <a>@Copyright 2020 TraST</a>
+  </div>
+
+  <script src="../General(Meniu+Navbar)/Navbar_Functions.js"></script>
+  <script src="../General(Meniu+Navbar)/functions.js"></script>
+</body>
+</html>
