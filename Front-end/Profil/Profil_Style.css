@@ -1,0 +1,155 @@
+html, body {
+  width:100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.display{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.wrapper {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.progresCard{
+  border: 1px solid #1c1f4c;
+  border-radius: 4px;  
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px;
+}
+
+.progresCard .colorBack{
+  width: 100%;
+  height: 50px;
+  color: white;
+  border-radius: 4px;
+  background-color: #1c1f4c;
+  margin-bottom: 30px;
+}
+
+.progresCard input[type="submit"]{
+  background-color: #F7BD29;
+  border: none;
+  color: white;
+  padding: 7px 10px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 4px;
+  width: 120px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: auto;
+}
+
+.cardblock{
+  position: fixed;
+  display: block;
+  top: 105px;
+}
+
+.card{
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 400px;
+  height: 450px;
+  margin: auto;
+  padding: 10px 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.card .colorBack{
+  width: 100%;
+  height: 50px;
+  color: white;
+  border-radius: 4px;
+  background-color: #1c1f4c;
+  margin-bottom: 30px;
+}
+
+.inputBox{
+  width: 98%;
+  padding-left: 5px;
+  text-align: left;
+}
+
+.card input[type="text"], input[type="password"] {
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  margin-left: auto;
+  margin-bottom: 20px;
+  height: 30px;
+  width: 100%;
+  color: black;
+  font-size: 16px;
+}
+
+.card input[type="submit"]{
+  background-color: #F7BD29;
+  color: white;
+  padding: 10px 10px;  
+  margin-top: 5px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width:100%;
+  justify-content: center;
+}
+
+.card input[type="submit"]:hover{
+  opacity: 0.8;
+}
+
+.capitol{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  width: 90%;
+  padding: 10px 10px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.capitol:hover{
+  border: 1.5px solid #F7BD29;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.progress-wrapper{
+  width: 100%;
+  margin: auto;
+  background: white;
+  border: solid 1px black;
+  border-radius: 4px;
+  height: 20px;
+}
+
+.progress {
+  height: 100%;
+  border-radius: 4px;
+  background: #00848c;
+}

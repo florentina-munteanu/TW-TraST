@@ -1,0 +1,79 @@
+.navbar{
+    overflow:visible;
+    background: #1C1f4C;
+    height:60px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar a{
+    float: left;
+    color: white;
+    padding: 18px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navbar a:hover{
+    background-color: gray;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
+  .navbar img{
+    float: left;
+    width: 70px;
+    height: 70px;
+  }
+ 
+  .right {
+    float: right;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 20px;
+  }
+
+  .right img{
+    float: right;
+    width: 40px;
+    height: 40px;
+    padding-right: 20px;
+  }
+
+  .profilulTau{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    margin-bottom: 10px;
+  }
+
+  .profilulTau:hover{
+    background-color: gray;
+  }
+  .right .language {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .language a {
+      padding: 5px 5px;
+      margin: none;
+      font-size: 10px;
+    }

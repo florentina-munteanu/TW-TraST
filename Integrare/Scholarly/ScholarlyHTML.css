@@ -1,0 +1,48 @@
+html, body {
+  width:100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.display{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  display: flex;
+  margin: auto;
+}
+
+.wrapper {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+}
+
+#interfata img{
+  height: 10%;
+  width: 10%;
+}
+
+[role=contentinfo] a {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+}
+
+[role=directory] ol,
+ol[role=directory] {
+  list-style-type: none;
+  background-color: #00848c;
+  font-size: 16px;
+  padding: 20px 20px;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 4px;
+}
+
+[role=contentinfo] dt {
+	font-weight: 700
+}

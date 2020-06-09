@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/x-icon" href="/General(Meniu+Navbar)/Logo-TraST.png"/>
+        <link rel="stylesheet" type="text/css" href="../General(Meniu+Navbar)/Style.css">
+        <link rel="stylesheet" type="text/css" href="../Autentificare/Autentificare_Style.css">
+    </head>
+    <body>
+        <div class="amplasareStanga">
+            <div class="container">
+                <img alt="Logo-TraST" src="../General(Meniu+Navbar)/Logo-TraST.png">
+                <h1>Skráðu þig</h1>
+                <form action="../PaginaPrincipala/Acasa.php" method="post">
+                    <div class="inputBox">
+                    <label for="nume"><b>Nafn</b></label>
+                    <input type="text" placeholder="Nafn" name="nume" required>
+                    </div>
+                    <div class="inputBox">
+                    <label for="prenume"><b>Fyrsta nafn</b></label>
+                    <input type="text" placeholder="Fyrsta nafn" name="prenume" required>
+                    </div>
+                    <div class="inputBox">
+                    <label for="email"><b>Tölvupóstur</b></label>
+                    <input type="text" placeholder="Tölvupóstur" name="email" required>
+                    </div>
+                    <div class="inputBox">
+                    <label for="psw"><b>Lykilorð</b></label>
+                    <input type="password" placeholder="Lykilorð" name="psw" required>
+                    </div>
+                    <div class="inputBox">
+                    <input type="submit" value="Skrá inn">
+                    </div>
+                </form>
+                <a class="link" href="./Login.html">Ertu þegar með aðgang? Skrá inn</a>
+            </div>
+        </div>
+        <div class="amplasareDreapta">
+            <img src="welcomeImage.png" alt="welcomeImage">
+        </div>
+    </body>
+</html>
