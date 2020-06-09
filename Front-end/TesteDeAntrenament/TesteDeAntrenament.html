@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang='ro'>
+    
+<head>
+    <meta charset="UTF-8">
+    <title>TraST</title>
+    <link rel="stylesheet" type="text/css" href="/General(Meniu+Navbar)/Style.css">
+    <link rel="stylesheet" type="text/css" href="/TesteDeAntrenament/TesteDeAntrenament_Style.css">
+    <link rel="stylesheet" type="text/css" href="/General(Meniu+Navbar)/Meniu_Style.css">
+    <link rel="stylesheet" type="text/css" href="/General(Meniu+Navbar)/Navbar_Style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+</head>
+<body>
+  <div id="NavBar">
+    <nav class="navbar" id="navi">
+      <span class="open-slide">
+        <a href="#" onclick="openSlideMenu()">
+          <svg width="30" height="30">
+              <path d="M0,5 30,5" stroke="#edebd9" stroke-width="3"/>
+              <path d="M0,14 30,14" stroke="#edebd9" stroke-width="3"/>
+              <path d="M0,23 30,23" stroke="#edebd9" stroke-width="3"/>
+          </svg>
+        </a>
+      </span>
+      <img src="../General(Meniu+Navbar)/Logo-TraST.png" alt="Logo-TraST">
+      <div class="right">
+      <a href="../PaginaPrincipala/Acasa.php">Acasa</a>
+      <div class="profilulTau">
+      <a href="../Profil/Profil.php">Profilul meu</a>
+      <img src="../PaginaPrincipala/Profil_Icon.png" alt="Profil_Icon">
+      </div>
+      <div class="language">
+        <a href="../PaginaPrincipala/Acasa.php">Lb. romana</a>
+        <a href="../PaginaPrincipala/AcasaISL.php">Lb. islandeza</a>
+  </div>
+    </div>
+    </nav>
+  </div>
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="../Legislatie/RegulamentCodRutier.html">Regulament si codul rutier</a>
+    <a href="../Indicatoare/MediuDeInvatare.html">Mediu de invatare</a>
+    <button class="dropdown-btn">Capitole 
+      <i class="fa fa-caret-down">&#9660;</i>
+    </button>
+    <div class="dropdown-container">
+      <a href="../Indicatoare/IndicatoareDeAvertizare.html">Indicatoare de avertizare</a>
+      <a href="../Indicatoare/IndicatoareDePrioritate.html">Indicatoare de prioritate</a>
+      <a href="../Indicatoare/IndicatoareDeRestrictie.html">Indicatoare de interzicere/restrictie</a>
+      <a href="../Indicatoare/IndicatoareDeObligare.html">Indicatoare de obligare</a>
+      <a href="../Indicatoare/IndicatoareOrientative.html">Indicatoare de orientare</a>
+      <a href="../Indicatoare/IndicatoareDeInformare.html">Indicatoare de informare</a>
+      <a href="../Indicatoare/PanouriAditionale.html">Panouri aditionale</a> 
+    </div>
+    <a href="../TesteDeAntrenament/TesteDeAntrenament.php">Teste de antrenament</a>
+    <a href="../ClasamentUtilizatori/ClasamentUtilizatori.php">Clasament Utilizatori</a>
+    <a href="../Scholarly/ScholarlyHTML.html">Ghid de utilizare</a> 
+  </div>
+
+
+<div class="wrapper">
+  <div class="display">
+    <h1>Teste de antrenament</h1>
+    <div class="miniCard">
+      <div class="nrIntrebare">
+        <p>Intrebarea 23</p>
+      </div>
+      <div class="nrRaspunsuri">
+      <div class="raspCorecte">
+      <p>Raspunsuri corecte: 23</p>
+      </div>
+      <div class="raspGresite">
+      <p>Raspunsuri gresite: 2</p>
+      </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="text">
+        <p>Schimbarea direcţiei de mers la dreapta sau la stânga nu este permisă la întâlnirea:</p>
+      </div>
+      <div class=column>
+      <div class="raspunsuri">
+        <label class="container">One
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Two
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Three
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+      </div>
+    <img class="poza" src="/SemneRutiereRO/IndicatoareDePrioritate/Cedează trecerea.png" alt="CedeazaTrecerea">
+    </div>
+    <button>Trimite raspunsul</button>
+  </div>
+</div>
+</div>
+
+<div class="footerPage">
+  <a>@Copyright 2020 TraST</a>
+</div>
+
+<script src="/General(Meniu+Navbar)/Navbar_Functions.js"></script>
+<script src="/General(Meniu+Navbar)/functions.js"></script>
+</body>
+
+</html>
